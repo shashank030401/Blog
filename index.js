@@ -43,6 +43,7 @@ app.get("/", async (req, res) => {
       method: "SERVER",
       status: res.statusCode,
       message: "Server Inactive",
+      
     });
   }
 });
