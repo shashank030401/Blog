@@ -1,0 +1,102 @@
+.login{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-Header{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+.loginCard{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.image{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image img{
+    width: 100%;
+}
+
+.loginForm{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 400px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 12px 12px 0;
+
+}
+.credentials{
+    width: 90%;
+
+}
+.email, .Password{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    margin: 20px 0;
+}
+
+.email label, .Password label{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.email input , .Password input{
+    outline: none;
+    border: none;
+    height: 20px;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.loginForm button{
+    width: 100px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width: 520px) {
+    .loginCard{
+        background-color: #1f1f1f;
+        width: 80vw;
+    }
+    .credentials{
+        width: 100%;
+    }
+    .loginForm{
+        width: 100%;
+        border-radius: 12px 12px;
+        background-color: black;
+        border: 1px solid white;
+    }
+    .image{
+        display: none;
+    }
+}

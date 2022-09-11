@@ -1,0 +1,248 @@
+.publish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 95vh;
+
+}
+.publish-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin-bottom: 30px;
+}
+.logo{
+    font-weight: bold;
+}
+.publish-form{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-title input{
+    font-family: 'Playfair Display', serif;
+    border: none;
+    width: 90vw;
+    height: 50px;
+    font-size: 2rem;
+    padding:5px;
+    margin-bottom: 10px;
+}
+
+.blog-title input:focus{
+    border-bottom: 2px solid #F5EDDC;
+    border-radius: 5px;
+    outline: none;
+}
+.blog-textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-between;
+}
+.blog-textarea textarea{
+    font-family: 'Playfair Display', serif;
+    border: none;
+    width: 90vw;
+    height: 50px;
+    font-size: 1rem;
+    padding:5px;
+    margin-bottom: 10px;
+    min-height: 400px;
+    outline: none;
+    text-align: justify;
+}
+.blog-textarea textarea::-webkit-resizer{
+    display: none;
+}
+.blog-textarea textarea:focus{
+    border-bottom: 2px solid #F5EDDC;
+    border-radius: 5px;
+    outline: none;
+}
+.blog-textarea p{
+    margin-bottom: 5px;
+}
+.blog-imageUpload{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-imageUpload input{
+    font-family: 'Playfair Display', serif;
+    display: none;
+}
+.blog-imageUpload label{
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;;
+}
+.imageUpladInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.margin-left{
+    margin-left: 10px;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+.tags{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin-top: 15px;
+}
+
+.tagSelector{
+    background-color: #EEEEEE;
+    color: black;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tagHolder{
+    display: flex;
+}
+.tag{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+    border-radius:5px;
+    font-size: 10px;
+    color: white;
+    margin-right: 2px;
+}
+.tag p{
+    margin-right: 20px;
+}
+
+@media screen and (max-width:520px) {
+.publish-form{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-title input{
+    font-family: 'Playfair Display', serif;
+    border: none;
+    width: 90vw;
+    height: 50px;
+    font-size: 2rem;
+    padding:5px;
+    margin-bottom: 10px;
+}
+
+.blog-title input:focus{
+    border-bottom: 2px solid rgb(178, 178, 178);
+    border-radius: 5px;
+    outline: none;
+}
+.blog-textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-between;
+}
+.blog-textarea textarea{
+    font-family: 'Playfair Display', serif;
+    border: none;
+    width: 90vw;
+    height: 50px;
+    font-size: 1rem;
+    padding:5px;
+    margin-bottom: 10px;
+    min-height: 400px;
+    outline: none;
+    text-align: justify;
+}
+.blog-textarea textarea::-webkit-resizer{
+    display: none;
+}
+.blog-textarea textarea:focus{
+    border-bottom: 2px solid rgb(178, 178, 178);
+    border-radius: 5px;
+    outline: none;
+}
+.blog-imageUpload{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-imageUpload input{
+    font-family: 'Playfair Display', serif;
+    display: none;
+}
+.blog-imageUpload label{
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;;
+}
+.imageUpladInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.margin-left{
+    margin-left: 10px;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+.tags{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.tagSelector{
+    background-color: #EEEEEE;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 0px;
+
+}
+.tagHolder{
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    margin-top: 5px;
+}
+.tag{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+    border-radius:5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+.tag p{
+    margin-right: 20px;
+}
+}

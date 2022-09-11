@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 10px 1px rgba(133, 133, 133, 0.476);
+}
+.navbar-logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-actions{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-actions a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid transparent;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out ;
+
+}
+/* .nav-actions a:hover{
+    color: red;
+} */
+.nav-actions a:focus{
+    border-color: black;
+}
+
+.nav-actions button{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 21px;
+}
