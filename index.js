@@ -4,7 +4,8 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import mongoose from "mongoose";
-
+import PublishBlog from "./Server/Routes/publishPost.js";
+import AllBlogs from "./Server/Routes/AllBlogs.js";
 const app = express();
 const PORT = process.env.PORT || 3001;
 const URI = `mongodb://localhost:27017`;
@@ -19,7 +20,8 @@ app.use(cors(corsOptions));
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 
-
+app.use("/publish",PublishBlog);
+app.use("/AllBlogs",AllBlogs);
 
 mongoose
   .connect(URI, { useNewUrlParser: true })
@@ -43,6 +45,7 @@ app.get("/", async (req, res) => {
       method: "SERVER",
       status: res.statusCode,
       message: "Server Inactive",
+
       
     });
   }

@@ -1,0 +1,15 @@
+.Expertise-body{
+    width: 1020px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Expertise-body span{
+    margin-right:10px;
+    color: #DCDCDC;
+}

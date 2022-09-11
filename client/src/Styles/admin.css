@@ -1,0 +1,167 @@
+.admin-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-logo{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.nav-search{
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.nav-search input{
+    width: 90%;
+    margin-right: 10px;
+    padding: 5px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 15px;
+    outline: none;
+
+}
+
+.nav-search button{
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    width: 15%;
+    font-family: 'Playfair Display', serif;
+    margin-right: 10px;
+}
+.post-holder{
+    padding: 20px;
+    margin-top: 30px;
+}
+.postCard{
+    display: flex;
+    border-radius: 15px;
+}
+.postCard-image{
+    padding: 10px;
+}
+
+.postCard-image img{
+    width: 100px;
+    height: 100px;
+}
+.postBody-tags{
+    font-size: 10px;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.postCard-body{
+    margin-left: 20px;
+}
+.postCard-body textarea{
+    font-family: 'Playfair Display', serif;
+    outline: none;
+    border: none;
+    display: block;
+    min-width: 900px;
+}
+.postCard-body textarea::-webkit-resizer{
+    display: none;
+}
+
+.postTitle{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+.postBody-tag{
+    background-color: rgb(212, 212, 212);
+    color: black;
+    padding: 5px;
+    margin: 5px 5px 0 0px;
+    border-radius: 15px;
+}
+
+.separate{
+    margin: 20px;
+    width: 1020px;
+    height: 2px;
+    background-color: rgb(212, 212, 212);
+}
+
+.date{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(80, 80, 80);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.postBody-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postBody-actions{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(89, 89, 89);
+}
+
+
+@media screen and (max-width:520px) {
+    .postCard{
+        justify-content: space-between;
+    }
+    .postCard-body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .postCard-body textarea{
+        display: none;
+    }  
+    .separate{
+        margin: 20px;
+        width: 200px;
+        height: 2px;
+        background-color: rgb(212, 212, 212);
+    }
+    .postBody-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .postBody-tags{
+        max-width: 200px;
+        flex-wrap: wrap;
+    }
+    .postBody-actions{
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: rgb(89, 89, 89);
+    }
+
+    /* .nav-search{
+        width: 100%;
+    } */
+    .nav-search input{
+        display: none;
+    
+    }
+    
+    .nav-search button{
+        display: none;
+    }
+      
+}
