@@ -1,9 +1,12 @@
 .navbar{
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    box-shadow: 10px 1px rgba(133, 133, 133, 0.476);
+    width: 98%;
+    position: fixed;
+    z-index: 1;
 }
 .navbar-logo{
     font-weight: bold;
@@ -40,4 +43,18 @@
     background-color: transparent;
     border: 2px solid black;
     border-radius: 21px;
+}
+
+@media screen and (max-width: 520px) {
+    .navbar{
+        width: 93%;
+    }
+    .navbar-logo{
+        font-size: 1rem;
+    }
+
+    .nav-actions{
+        width: 200px;
+
+    }
 }

@@ -1,0 +1,95 @@
+.wrapperBlog{
+    display: flex;
+    justify-content: space-around;
+}
+.Blog{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+    width:100% ;
+}
+.BlogBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+.BlogTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.BlogImage{
+    max-width: 700px;
+}
+
+textarea::-webkit-scrollbar{
+    display: none;
+}
+.BlogContent{
+    max-width: 700px;
+    height: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+    border: none;
+    outline: none;
+    margin: 20px 0 ;
+}
+
+
+.Blog img{
+    width: 100%;
+}
+
+.BlogSticky{
+    margin-top: 90px;
+    height: 100vh;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-left: 1px solid rgb(208, 208, 208);
+}
+
+
+.RequestedBlogs{
+    padding: 20px;
+}
+.Search input{
+    margin-left: 20px;
+    width: 70%;
+    padding: 10px;
+    height: 10px;
+    border: 1px solid;
+    border-radius: 21px;
+}
+
+.Search button{
+    width: 20%;
+    margin-left: 10px;
+    height: 32px;
+    border: none;
+    border-radius: 21px;
+    background-color: black;
+    color: white;
+}
+.overflow{
+    position: sticky;
+    z-index: 0;
+    top: 65px;
+}
+
+
+@media screen and (max-width: 520px) {
+    .Blog{
+        margin: 10px;
+    }
+    .BlogTitle{
+        font-size: 18px;
+    }
+    .BlogSticky{
+        display: none;
+    }
+}
