@@ -114,8 +114,64 @@
     justify-content: space-around;
     color: rgb(89, 89, 89);
 }
+.postSmallCard{
+    display: flex;
+    justify-content: space-between;
+}
+.postSmallCard-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.postSmallTitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+.postSmallCard-body textarea{
+    font-family: 'Playfair Display', serif;
+    outline: none;
+    border: none;
+    display: block;
+    min-width: 400px;
+    text-align: justify;
+    background-color: transparent;
+}  
 
+.postSmallBody-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postSmallBody-tags{
+    max-width: 200px;
+    flex-wrap: wrap;
+}
+
+.postSmallBody-tags p{
+    font-size: 12px;
+}
+.postSmallBody-actions{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(89, 89, 89);
+}
+.postSmallCard-image{
+    padding: 10px;
+}
+
+.postSmallCard-image img{
+    width: 80px;
+    height: 80px;
+}
+
+.divider{
+    margin: 20px 0;
+}
 @media screen and (max-width:520px) {
     .postCard{
         justify-content: space-between;

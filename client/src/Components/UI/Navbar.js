@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 import "../../Styles/Navbar.css";
 function Navbar() {
   return (
@@ -7,7 +8,7 @@ function Navbar() {
         <p>Jack Of Thoughts</p>
       </div>
       <div className="nav-actions">
-        <a href="#home">Home</a>
+        <NavLink to="/">Home</NavLink>
         <a href="#blog">Blogs</a>
         <button>Lets talk</button>
       </div>
